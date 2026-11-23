@@ -1,0 +1,30 @@
+:root {
+  --ink: #1b2430;
+  --muted: #5b6675;
+  --paper: #f4f6f8;
+  --card: #ffffff;
+  --line: #d9dee5;
+  --teal: #0f6b6b;
+  --ringan: #2f7d4f;
+  --ringan-bg: #e4f3ea;
+  --sedang: #9a6208;
+  --sedang-bg: #fbefd5;
+  --berat: #b3261e;
+  --berat-bg: #fbe4e2;
+  --none-bg: #eceff3;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Schibsted Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  line-height: 1.55;
+}
+h1, h2, h3, p { margin: 0; }
+button, select, input { font: inherit; color: inherit; }
+:focus-visible { outline: 3px solid var(--teal); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
+}
